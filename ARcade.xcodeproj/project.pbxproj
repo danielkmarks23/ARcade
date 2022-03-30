@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E28746827D27A4B001B2060 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E28746727D27A4B001B2060 /* SessionManager.swift */; };
+		7E28746A27D27B48001B2060 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E28746927D27B48001B2060 /* SettingsView.swift */; };
+		7E28746C27D3C5E9001B2060 /* SceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E28746B27D3C5E9001B2060 /* SceneManager.swift */; };
+		7E28746E27E65309001B2060 /* ScenePersistenceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E28746D27E65309001B2060 /* ScenePersistenceHelper.swift */; };
+		7E4914A827F0B568004DD660 /* Pacman_Arcade.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 7E4914A727F0B568004DD660 /* Pacman_Arcade.usdz */; };
+		7E4914AA27F34720004DD660 /* ModelsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4914A927F34720004DD660 /* ModelsManager.swift */; };
+		7E4914B027F34B83004DD660 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4914AF27F34B83004DD660 /* Logger.swift */; };
+		7E54B3BC27C945F6000ADD32 /* ARcadeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E54B3BB27C945F6000ADD32 /* ARcadeApp.swift */; };
+		7E54B3BE27C945F6000ADD32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E54B3BD27C945F6000ADD32 /* ContentView.swift */; };
+		7E54B3C027C945F7000ADD32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E54B3BF27C945F7000ADD32 /* Assets.xcassets */; };
+		7E54B3C327C945F7000ADD32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E54B3C227C945F7000ADD32 /* Preview Assets.xcassets */; };
+		7E54B3CD27C945F7000ADD32 /* ARcadeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E54B3CC27C945F7000ADD32 /* ARcadeTests.swift */; };
+		7E54B3D727C945F7000ADD32 /* ARcadeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E54B3D627C945F7000ADD32 /* ARcadeUITests.swift */; };
+		7E54B3D927C945F7000ADD32 /* ARcadeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E54B3D827C945F7000ADD32 /* ARcadeUITestsLaunchTests.swift */; };
+		7E54B3E927C94962000ADD32 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E54B3E827C94962000ADD32 /* ControlView.swift */; };
+		7E54B3EB27C96BB0000ADD32 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E54B3EA27C96BB0000ADD32 /* BrowseView.swift */; };
+		7E54B3ED27CA51DF000ADD32 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E54B3EC27CA51DF000ADD32 /* Model.swift */; };
+		7E54B3F527CA7005000ADD32 /* MortalKombat_Arcade.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 7E54B3EE27CA7004000ADD32 /* MortalKombat_Arcade.usdz */; };
+		7E54B3F627CA7005000ADD32 /* Centipede_Arcade.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 7E54B3EF27CA7004000ADD32 /* Centipede_Arcade.usdz */; };
+		7E54B3F727CA7005000ADD32 /* Defender_Arcade.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 7E54B3F027CA7005000ADD32 /* Defender_Arcade.usdz */; };
+		7E54B3F827CA7005000ADD32 /* DonkeyKong_Arcade.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 7E54B3F127CA7005000ADD32 /* DonkeyKong_Arcade.usdz */; };
+		7E54B3F927CA7005000ADD32 /* Q*bert_Arcade.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 7E54B3F227CA7005000ADD32 /* Q*bert_Arcade.usdz */; };
+		7E54B3FA27CA7005000ADD32 /* Asteroids_Arcade.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 7E54B3F327CA7005000ADD32 /* Asteroids_Arcade.usdz */; };
+		7E54B3FB27CA7005000ADD32 /* SpaceInvaders_Arcade.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 7E54B3F427CA7005000ADD32 /* SpaceInvaders_Arcade.usdz */; };
+		7E54B3FD27CA9573000ADD32 /* PlacementManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E54B3FC27CA9573000ADD32 /* PlacementManager.swift */; };
+		7E54B3FF27CA97AC000ADD32 /* PlacementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E54B3FE27CA97AC000ADD32 /* PlacementView.swift */; };
+		7E54B40527CA9A78000ADD32 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 7E54B40427CA9A78000ADD32 /* FocusEntity */; };
+		7E54B40927CA9AC6000ADD32 /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E54B40827CA9AC6000ADD32 /* CustomARView.swift */; };
+		7E54B40B27CA9BDE000ADD32 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E54B40A27CA9BDE000ADD32 /* ARViewContainer.swift */; };
+		7E54B40D27CC07F0000ADD32 /* ModelDeletionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E54B40C27CC07F0000ADD32 /* ModelDeletionManager.swift */; };
+		7E54B40F27CC0C1F000ADD32 /* DeletionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E54B40E27CC0C1F000ADD32 /* DeletionView.swift */; };
+		7E54B41127CC0C6A000ADD32 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E54B41027CC0C6A000ADD32 /* ActionButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E54B3C927C945F7000ADD32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E54B3B027C945F6000ADD32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E54B3B727C945F6000ADD32;
+			remoteInfo = ARArcade;
+		};
+		7E54B3D327C945F7000ADD32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E54B3B027C945F6000ADD32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E54B3B727C945F6000ADD32;
+			remoteInfo = ARArcade;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7E28746727D27A4B001B2060 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		7E28746927D27B48001B2060 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		7E28746B27D3C5E9001B2060 /* SceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManager.swift; sourceTree = "<group>"; };
+		7E28746D27E65309001B2060 /* ScenePersistenceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenePersistenceHelper.swift; sourceTree = "<group>"; };
+		7E4914A727F0B568004DD660 /* Pacman_Arcade.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Pacman_Arcade.usdz; sourceTree = "<group>"; };
+		7E4914A927F34720004DD660 /* ModelsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsManager.swift; sourceTree = "<group>"; };
+		7E4914AF27F34B83004DD660 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		7E54B3B827C945F6000ADD32 /* ARcade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARcade.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E54B3BB27C945F6000ADD32 /* ARcadeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARcadeApp.swift; sourceTree = "<group>"; };
+		7E54B3BD27C945F6000ADD32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7E54B3BF27C945F7000ADD32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E54B3C227C945F7000ADD32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7E54B3C827C945F7000ADD32 /* ARcadeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARcadeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E54B3CC27C945F7000ADD32 /* ARcadeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARcadeTests.swift; sourceTree = "<group>"; };
+		7E54B3D227C945F7000ADD32 /* ARcadeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARcadeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E54B3D627C945F7000ADD32 /* ARcadeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARcadeUITests.swift; sourceTree = "<group>"; };
+		7E54B3D827C945F7000ADD32 /* ARcadeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARcadeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7E54B3E827C94962000ADD32 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
+		7E54B3EA27C96BB0000ADD32 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
+		7E54B3EC27CA51DF000ADD32 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		7E54B3EE27CA7004000ADD32 /* MortalKombat_Arcade.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = MortalKombat_Arcade.usdz; sourceTree = "<group>"; };
+		7E54B3EF27CA7004000ADD32 /* Centipede_Arcade.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Centipede_Arcade.usdz; sourceTree = "<group>"; };
+		7E54B3F027CA7005000ADD32 /* Defender_Arcade.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Defender_Arcade.usdz; sourceTree = "<group>"; };
+		7E54B3F127CA7005000ADD32 /* DonkeyKong_Arcade.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = DonkeyKong_Arcade.usdz; sourceTree = "<group>"; };
+		7E54B3F227CA7005000ADD32 /* Q*bert_Arcade.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "Q*bert_Arcade.usdz"; sourceTree = "<group>"; };
+		7E54B3F327CA7005000ADD32 /* Asteroids_Arcade.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Asteroids_Arcade.usdz; sourceTree = "<group>"; };
+		7E54B3F427CA7005000ADD32 /* SpaceInvaders_Arcade.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = SpaceInvaders_Arcade.usdz; sourceTree = "<group>"; };
+		7E54B3FC27CA9573000ADD32 /* PlacementManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementManager.swift; sourceTree = "<group>"; };
+		7E54B3FE27CA97AC000ADD32 /* PlacementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementView.swift; sourceTree = "<group>"; };
+		7E54B40827CA9AC6000ADD32 /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
+		7E54B40A27CA9BDE000ADD32 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
+		7E54B40C27CC07F0000ADD32 /* ModelDeletionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDeletionManager.swift; sourceTree = "<group>"; };
+		7E54B40E27CC0C1F000ADD32 /* DeletionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletionView.swift; sourceTree = "<group>"; };
+		7E54B41027CC0C6A000ADD32 /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E54B3B527C945F6000ADD32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E54B40527CA9A78000ADD32 /* FocusEntity in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E54B3C527C945F7000ADD32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E54B3CF27C945F7000ADD32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E4914AE27F34B31004DD660 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7E4914AF27F34B83004DD660 /* Logger.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		7E54B3AF27C945F6000ADD32 = {
+			isa = PBXGroup;
+			children = (
+				7E54B3BA27C945F6000ADD32 /* ARcade */,
+				7E54B3CB27C945F7000ADD32 /* ARcadeTests */,
+				7E54B3D527C945F7000ADD32 /* ARcadeUITests */,
+				7E54B3B927C945F6000ADD32 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7E54B3B927C945F6000ADD32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E54B3B827C945F6000ADD32 /* ARcade.app */,
+				7E54B3C827C945F7000ADD32 /* ARcadeTests.xctest */,
+				7E54B3D227C945F7000ADD32 /* ARcadeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E54B3BA27C945F6000ADD32 /* ARcade */ = {
+			isa = PBXGroup;
+			children = (
+				7E54B3BB27C945F6000ADD32 /* ARcadeApp.swift */,
+				7E4914AE27F34B31004DD660 /* Utilities */,
+				7E54B41227CE9ECA000ADD32 /* Views */,
+				7E54B41327CE9EE8000ADD32 /* Models */,
+				7E54B41427CE9EFC000ADD32 /* Managers */,
+				7E54B3BF27C945F7000ADD32 /* Assets.xcassets */,
+				7E54B3C127C945F7000ADD32 /* Preview Content */,
+				7E54B3E527C94816000ADD32 /* 3D Assets */,
+			);
+			path = ARcade;
+			sourceTree = "<group>";
+		};
+		7E54B3C127C945F7000ADD32 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7E54B3C227C945F7000ADD32 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7E54B3CB27C945F7000ADD32 /* ARcadeTests */ = {
+			isa = PBXGroup;
+			children = (
+				7E54B3CC27C945F7000ADD32 /* ARcadeTests.swift */,
+			);
+			path = ARcadeTests;
+			sourceTree = "<group>";
+		};
+		7E54B3D527C945F7000ADD32 /* ARcadeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7E54B3D627C945F7000ADD32 /* ARcadeUITests.swift */,
+				7E54B3D827C945F7000ADD32 /* ARcadeUITestsLaunchTests.swift */,
+			);
+			path = ARcadeUITests;
+			sourceTree = "<group>";
+		};
+		7E54B3E527C94816000ADD32 /* 3D Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7E4914A727F0B568004DD660 /* Pacman_Arcade.usdz */,
+				7E54B3F327CA7005000ADD32 /* Asteroids_Arcade.usdz */,
+				7E54B3EF27CA7004000ADD32 /* Centipede_Arcade.usdz */,
+				7E54B3F027CA7005000ADD32 /* Defender_Arcade.usdz */,
+				7E54B3F127CA7005000ADD32 /* DonkeyKong_Arcade.usdz */,
+				7E54B3EE27CA7004000ADD32 /* MortalKombat_Arcade.usdz */,
+				7E54B3F227CA7005000ADD32 /* Q*bert_Arcade.usdz */,
+				7E54B3F427CA7005000ADD32 /* SpaceInvaders_Arcade.usdz */,
+			);
+			path = "3D Assets";
+			sourceTree = "<group>";
+		};
+		7E54B41227CE9ECA000ADD32 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7E54B3BD27C945F6000ADD32 /* ContentView.swift */,
+				7E54B41027CC0C6A000ADD32 /* ActionButton.swift */,
+				7E54B3E827C94962000ADD32 /* ControlView.swift */,
+				7E54B3EA27C96BB0000ADD32 /* BrowseView.swift */,
+				7E54B3FE27CA97AC000ADD32 /* PlacementView.swift */,
+				7E54B40827CA9AC6000ADD32 /* CustomARView.swift */,
+				7E54B40A27CA9BDE000ADD32 /* ARViewContainer.swift */,
+				7E54B40E27CC0C1F000ADD32 /* DeletionView.swift */,
+				7E28746927D27B48001B2060 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7E54B41327CE9EE8000ADD32 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7E54B3EC27CA51DF000ADD32 /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7E54B41427CE9EFC000ADD32 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				7E54B3FC27CA9573000ADD32 /* PlacementManager.swift */,
+				7E28746727D27A4B001B2060 /* SessionManager.swift */,
+				7E54B40C27CC07F0000ADD32 /* ModelDeletionManager.swift */,
+				7E28746B27D3C5E9001B2060 /* SceneManager.swift */,
+				7E28746D27E65309001B2060 /* ScenePersistenceHelper.swift */,
+				7E4914A927F34720004DD660 /* ModelsManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E54B3B727C945F6000ADD32 /* ARcade */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E54B3DC27C945F7000ADD32 /* Build configuration list for PBXNativeTarget "ARcade" */;
+			buildPhases = (
+				7E54B3B427C945F6000ADD32 /* Sources */,
+				7E54B3B527C945F6000ADD32 /* Frameworks */,
+				7E54B3B627C945F6000ADD32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARcade;
+			packageProductDependencies = (
+				7E54B40427CA9A78000ADD32 /* FocusEntity */,
+			);
+			productName = ARArcade;
+			productReference = 7E54B3B827C945F6000ADD32 /* ARcade.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7E54B3C727C945F7000ADD32 /* ARcadeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E54B3DF27C945F7000ADD32 /* Build configuration list for PBXNativeTarget "ARcadeTests" */;
+			buildPhases = (
+				7E54B3C427C945F7000ADD32 /* Sources */,
+				7E54B3C527C945F7000ADD32 /* Frameworks */,
+				7E54B3C627C945F7000ADD32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E54B3CA27C945F7000ADD32 /* PBXTargetDependency */,
+			);
+			name = ARcadeTests;
+			productName = ARArcadeTests;
+			productReference = 7E54B3C827C945F7000ADD32 /* ARcadeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7E54B3D127C945F7000ADD32 /* ARcadeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E54B3E227C945F7000ADD32 /* Build configuration list for PBXNativeTarget "ARcadeUITests" */;
+			buildPhases = (
+				7E54B3CE27C945F7000ADD32 /* Sources */,
+				7E54B3CF27C945F7000ADD32 /* Frameworks */,
+				7E54B3D027C945F7000ADD32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E54B3D427C945F7000ADD32 /* PBXTargetDependency */,
+			);
+			name = ARcadeUITests;
+			productName = ARArcadeUITests;
+			productReference = 7E54B3D227C945F7000ADD32 /* ARcadeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E54B3B027C945F6000ADD32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					7E54B3B727C945F6000ADD32 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					7E54B3C727C945F7000ADD32 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 7E54B3B727C945F6000ADD32;
+					};
+					7E54B3D127C945F7000ADD32 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 7E54B3B727C945F6000ADD32;
+					};
+				};
+			};
+			buildConfigurationList = 7E54B3B327C945F6000ADD32 /* Build configuration list for PBXProject "ARcade" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7E54B3AF27C945F6000ADD32;
+			packageReferences = (
+				7E54B40327CA9A78000ADD32 /* XCRemoteSwiftPackageReference "FocusEntity" */,
+			);
+			productRefGroup = 7E54B3B927C945F6000ADD32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E54B3B727C945F6000ADD32 /* ARcade */,
+				7E54B3C727C945F7000ADD32 /* ARcadeTests */,
+				7E54B3D127C945F7000ADD32 /* ARcadeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E54B3B627C945F6000ADD32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E54B3F527CA7005000ADD32 /* MortalKombat_Arcade.usdz in Resources */,
+				7E4914A827F0B568004DD660 /* Pacman_Arcade.usdz in Resources */,
+				7E54B3F727CA7005000ADD32 /* Defender_Arcade.usdz in Resources */,
+				7E54B3F827CA7005000ADD32 /* DonkeyKong_Arcade.usdz in Resources */,
+				7E54B3F627CA7005000ADD32 /* Centipede_Arcade.usdz in Resources */,
+				7E54B3FA27CA7005000ADD32 /* Asteroids_Arcade.usdz in Resources */,
+				7E54B3F927CA7005000ADD32 /* Q*bert_Arcade.usdz in Resources */,
+				7E54B3FB27CA7005000ADD32 /* SpaceInvaders_Arcade.usdz in Resources */,
+				7E54B3C327C945F7000ADD32 /* Preview Assets.xcassets in Resources */,
+				7E54B3C027C945F7000ADD32 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E54B3C627C945F7000ADD32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E54B3D027C945F7000ADD32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E54B3B427C945F6000ADD32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E54B3FD27CA9573000ADD32 /* PlacementManager.swift in Sources */,
+				7E28746827D27A4B001B2060 /* SessionManager.swift in Sources */,
+				7E54B3ED27CA51DF000ADD32 /* Model.swift in Sources */,
+				7E54B3EB27C96BB0000ADD32 /* BrowseView.swift in Sources */,
+				7E54B3BE27C945F6000ADD32 /* ContentView.swift in Sources */,
+				7E54B3E927C94962000ADD32 /* ControlView.swift in Sources */,
+				7E54B40B27CA9BDE000ADD32 /* ARViewContainer.swift in Sources */,
+				7E28746C27D3C5E9001B2060 /* SceneManager.swift in Sources */,
+				7E28746A27D27B48001B2060 /* SettingsView.swift in Sources */,
+				7E4914AA27F34720004DD660 /* ModelsManager.swift in Sources */,
+				7E54B3BC27C945F6000ADD32 /* ARcadeApp.swift in Sources */,
+				7E28746E27E65309001B2060 /* ScenePersistenceHelper.swift in Sources */,
+				7E54B40927CA9AC6000ADD32 /* CustomARView.swift in Sources */,
+				7E4914B027F34B83004DD660 /* Logger.swift in Sources */,
+				7E54B40F27CC0C1F000ADD32 /* DeletionView.swift in Sources */,
+				7E54B3FF27CA97AC000ADD32 /* PlacementView.swift in Sources */,
+				7E54B40D27CC07F0000ADD32 /* ModelDeletionManager.swift in Sources */,
+				7E54B41127CC0C6A000ADD32 /* ActionButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E54B3C427C945F7000ADD32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E54B3CD27C945F7000ADD32 /* ARcadeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E54B3CE27C945F7000ADD32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E54B3D927C945F7000ADD32 /* ARcadeUITestsLaunchTests.swift in Sources */,
+				7E54B3D727C945F7000ADD32 /* ARcadeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7E54B3CA27C945F7000ADD32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E54B3B727C945F6000ADD32 /* ARcade */;
+			targetProxy = 7E54B3C927C945F7000ADD32 /* PBXContainerItemProxy */;
+		};
+		7E54B3D427C945F7000ADD32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E54B3B727C945F6000ADD32 /* ARcade */;
+			targetProxy = 7E54B3D327C945F7000ADD32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7E54B3DA27C945F7000ADD32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7E54B3DB27C945F7000ADD32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E54B3DD27C945F7000ADD32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ARcade/Preview Content\"";
+				DEVELOPMENT_TEAM = QX98HV5M9Z;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "To use AR, this app needs access to your camera.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danielkmarks.ARcade;
+				PRODUCT_NAME = ARcade;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E54B3DE27C945F7000ADD32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ARcade/Preview Content\"";
+				DEVELOPMENT_TEAM = QX98HV5M9Z;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "To use AR, this app needs access to your camera.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danielkmarks.ARcade;
+				PRODUCT_NAME = ARcade;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7E54B3E027C945F7000ADD32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = come.danielkmarks.ARcadeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARcade.app/ARcade";
+			};
+			name = Debug;
+		};
+		7E54B3E127C945F7000ADD32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = come.danielkmarks.ARcadeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARcade.app/ARcade";
+			};
+			name = Release;
+		};
+		7E54B3E327C945F7000ADD32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = come.danielkmarks.ARcadeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ARcade;
+			};
+			name = Debug;
+		};
+		7E54B3E427C945F7000ADD32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = come.danielkmarks.ARcadeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ARcade;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E54B3B327C945F6000ADD32 /* Build configuration list for PBXProject "ARcade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E54B3DA27C945F7000ADD32 /* Debug */,
+				7E54B3DB27C945F7000ADD32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E54B3DC27C945F7000ADD32 /* Build configuration list for PBXNativeTarget "ARcade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E54B3DD27C945F7000ADD32 /* Debug */,
+				7E54B3DE27C945F7000ADD32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E54B3DF27C945F7000ADD32 /* Build configuration list for PBXNativeTarget "ARcadeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E54B3E027C945F7000ADD32 /* Debug */,
+				7E54B3E127C945F7000ADD32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E54B3E227C945F7000ADD32 /* Build configuration list for PBXNativeTarget "ARcadeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E54B3E327C945F7000ADD32 /* Debug */,
+				7E54B3E427C945F7000ADD32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7E54B40327CA9A78000ADD32 /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7E54B40427CA9A78000ADD32 /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E54B40327CA9A78000ADD32 /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7E54B3B027C945F6000ADD32 /* Project object */;
+}
